@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # security-check
 Linux Debian-based security audit script for that checks for updates, network and services connections, malware detection, and log review.
 =======
@@ -70,4 +69,3 @@ The original Bash version of this project focused on layered host security check
 - Some checks may be skipped if the required tools are not installed, although you will be warned if they are not.
 - The script should be run with `sudo` for full access to logs and system information.
 - Scanning the full filesystem with ClamAV may take a while depending on system size.
->>>>>>> 2b3adb4 (Initial commit: Python security check script)
