@@ -1,6 +1,7 @@
 # security-check
-Linux Debian-based security audit script that checks for updates, network and services connections, malware detection, and log review.
-=======
+
+# Linux Debian-based security audit script for that checks for updates, network and services connections, malware detection, and log review.
+
 # Security Check Script
 
 A Linux security auditing tool that checks for system updates, listening ports, running services, rootkit indicators, malware, and authentication logs in one automated workflow.
@@ -12,6 +13,7 @@ This project began as a Bash-based server hardening and malware detection script
 - Checks for available system updates.
 - Lists listening TCP and UDP ports with process information.
 - Detects running Docker containers if Docker is installed.
+- Detects running Podman containers if Podman is installed.
 - Runs `rkhunter` for rootkit detection.
 - Runs ClamAV for malware scanning.
 - Reviews recent login activity.
@@ -34,6 +36,7 @@ This project began as a Bash-based server hardening and malware detection script
 - `clamav-freshclam`
 - `fail2ban`
 - `docker`
+- `podman`
 
 ## Usage
 

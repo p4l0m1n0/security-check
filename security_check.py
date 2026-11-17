@@ -140,6 +140,19 @@ def check_network_and_services():
     else:
         print("Docker not installed.")
 
+    # List Podman containers - shows all running Podman containers
+    # Podman is a daemonless alternative to Docker with similar CLI
+    # Useful for identifying rootless or systemd-managed containers
+    print_subsection("Running Podman containers")
+    if shutil.which("podman"):
+        podman_containers = run_command("sudo podman ps")
+        if podman_containers:
+            print(podman_containers)
+        else:
+            print("No Podman containers running.")
+    else:
+        print("Podman not installed.")
+
 
 def check_rootkit_and_malware():
     """
